@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Vận Tốc - Lớp 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h1>Bài Tập Về Vận Tốc</h1>
+            <p class="subtitle">Dành cho học sinh lớp 5</p>
+        </header>
+
+        <div class="info-box">
+            <div class="info-item">
+                <i class="fas fa-info-circle"></i>
+                <span>Công thức: <strong>Vận tốc = Quãng đường ÷ Thời gian</strong></span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span>Thời gian làm bài: <strong>30 phút</strong></span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-star"></i>
+                <span>Tổng số câu: <strong>10 câu</strong></span>
+            </div>
+        </div>
+
+        <form id="velocityQuiz">
+            <!-- Câu 1 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 1</span>
+                    <span class="question-type">Trắc nghiệm</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-bicycle"></i>
+                    Một chiếc xe đạp đi được 20 km trong 2 giờ. Vận tốc của xe đạp là bao nhiêu?
+                </p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="a" required>
+                        <span>10 km/giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="b">
+                        <span>20 km/giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="c">
+                        <span>40 km/giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="d">
+                        <span>5 km/giờ</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Câu 2 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 2</span>
+                    <span class="question-type">Trắc nghiệm</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-car"></i>
+                    Ô tô đi với vận tốc 60 km/giờ. Hỏi trong 3 giờ ô tô đi được bao nhiêu ki-lô-mét?
+                </p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="a" required>
+                        <span>180 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="b">
+                        <span>63 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="c">
+                        <span>20 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="d">
+                        <span>120 km</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Câu 3 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 3</span>
+                    <span class="question-type">Điền số</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-train"></i>
+                    Một đoàn tàu chạy được 120 km trong 2 giờ. Vận tốc của đoàn tàu là:
+                </p>
+                <div class="input-group">
+                    <input type="number" name="q3" class="text-input" placeholder="Nhập số" required>
+                    <span class="unit">km/giờ</span>
+                </div>
+            </div>
+
+            <!-- Câu 4 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 4</span>
+                    <span class="question-type">Trắc nghiệm</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-running"></i>
+                    Bạn Nam chạy với vận tốc 12 km/giờ. Hỏi bạn Nam chạy được bao nhiêu ki-lô-mét trong 30 phút?
+                </p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4" value="a" required>
+                        <span>6 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="b">
+                        <span>12 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="c">
+                        <span>24 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="d">
+                        <span>3 km</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Câu 5 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 5</span>
+                    <span class="question-type">Điền số</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-motorcycle"></i>
+                    Xe máy đi được 90 km với vận tốc 45 km/giờ. Thời gian xe máy đi là:
+                </p>
+                <div class="input-group">
+                    <input type="number" name="q5" class="text-input" placeholder="Nhập số" required>
+                    <span class="unit">giờ</span>
+                </div>
+            </div>
+
+            <!-- Câu 6 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 6</span>
+                    <span class="question-type">Trắc nghiệm</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-bus"></i>
+                    Xe buýt đi từ Hà Nội đến Hải Phòng hết 2 giờ 30 phút với vận tốc 80 km/giờ. Quãng đường từ Hà Nội đến Hải Phòng dài bao nhiêu?
+                </p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q6" value="a" required>
+                        <span>200 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="b">
+                        <span>160 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="c">
+                        <span>240 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="d">
+                        <span>180 km</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Câu 7 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 7</span>
+                    <span class="question-type">Trắc nghiệm</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-ship"></i>
+                    Một con tàu đi được 150 km trong 5 giờ. Vận tốc của con tàu là:
+                </p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q7" value="a" required>
+                        <span>30 km/giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="b">
+                        <span>25 km/giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="c">
+                        <span>35 km/giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="d">
+                        <span>40 km/giờ</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Câu 8 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 8</span>
+                    <span class="question-type">Điền số</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-plane"></i>
+                    Máy bay bay với vận tốc 600 km/giờ trong 4 giờ. Quãng đường máy bay đã bay là:
+                </p>
+                <div class="input-group">
+                    <input type="number" name="q8" class="text-input" placeholder="Nhập số" required>
+                    <span class="unit">km</span>
+                </div>
+            </div>
+
+            <!-- Câu 9 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 9</span>
+                    <span class="question-type">Bài toán</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-road"></i>
+                    Hai thành phố A và B cách nhau 240 km. Một ô tô đi từ A đến B với vận tốc 60 km/giờ. Hỏi ô tô đi từ A đến B mất bao nhiêu thời gian?
+                </p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q9" value="a" required>
+                        <span>4 giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="b">
+                        <span>3 giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="c">
+                        <span>5 giờ</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="d">
+                        <span>6 giờ</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Câu 10 -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Câu 10</span>
+                    <span class="question-type">Bài toán</span>
+                </div>
+                <p class="question-text">
+                    <i class="fas fa-biking"></i>
+                    Bạn Hoa đạp xe từ nhà đến trường mất 15 phút với vận tốc 16 km/giờ. Quãng đường từ nhà Hoa đến trường dài bao nhiêu?
+                </p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q10" value="a" required>
+                        <span>4 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q10" value="b">
+                        <span>8 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q10" value="c">
+                        <span>2 km</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q10" value="d">
+                        <span>16 km</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Thông tin học sinh -->
+            <div class="student-info">
+                <h3><i class="fas fa-user"></i> Thông tin học sinh</h3>
+                <div class="form-group">
+                    <label>Họ và tên:</label>
+                    <input type="text" name="studentName" class="text-input" placeholder="Nhập họ tên" required>
+                </div>
+                <div class="form-group">
+                    <label>Lớp:</label>
+                    <input type="text" name="studentClass" class="text-input" placeholder="Ví dụ: 5A1" required>
+                </div>
+            </div>
+
+            <!-- Nút submit -->
+            <div class="submit-section">
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Nộp bài
+                </button>
+            </div>
+        </form>
+
+        <!-- Kết quả -->
+        <div id="resultSection" class="result-section" style="display: none;">
+            <div class="result-card">
+                <div class="result-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h2>Kết quả bài làm</h2>
+                <div class="score-display">
+                    <span class="score" id="scoreDisplay">0</span>
+                    <span class="total">/10</span>
+                </div>
+                <p class="result-message" id="resultMessage"></p>
+                <div class="result-details" id="resultDetails"></div>
+                <button class="retry-btn" onclick="location.reload()">
+                    <i class="fas fa-redo"></i>
+                    Làm lại
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
