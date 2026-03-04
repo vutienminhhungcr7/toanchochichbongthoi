@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Vận Tốc - Quãng Đường - Thời Gian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🚗 Học Vận Tốc - Quãng Đường - Thời Gian cho Chích Bông thối</h1>
+            <p class="subtitle">Khám phá mối quan hệ thú vị trong chuyển động</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <button class="nav-btn active" data-section="theory">📚 Lý Thuyết</button>
+            <button class="nav-btn" data-section="animation">🎬 Minh Họa</button>
+            <button class="nav-btn" data-section="calculator">🧮 Tính Toán</button>
+            <button class="nav-btn" data-section="exercises">✏️ Bài Tập</button>
+            <button class="nav-btn" data-section="game">🎮 Mini Game</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Theory Section -->
+        <section id="theory" class="section active">
+            <div class="container">
+                <h2>📚 Lý Thuyết Cơ Bản</h2>
+                
+                <div class="theory-content">
+                    <div class="theory-card">
+                        <h3>🎯 Mối Quan Hệ Cơ Bản</h3>
+                        <p>Khi một vật chuyển động, có 3 đại lượng quan trọng:</p>
+                        <ul>
+                            <li><strong>Vận tốc (v):</strong> Tốc độ di chuyển của vật (km/h, m/s)</li>
+                            <li><strong>Quãng đường (s):</strong> Độ dài đường đi được (km, m)</li>
+                            <li><strong>Thời gian (t):</strong> Thời gian di chuyển (giờ, giây)</li>
+                        </ul>
+                    </div>
+
+                    <div class="formulas">
+                        <div class="formula-card">
+                            <div class="formula-title">Tính Vận Tốc</div>
+                            <div class="formula">v = s / t</div>
+                            <div class="formula-desc">Vận tốc = Quãng đường ÷ Thời gian</div>
+                            <div class="formula-example">
+                                Ví dụ: Xe đi 120 km trong 2 giờ<br>
+                                v = 120 / 2 = 60 km/h
+                            </div>
+                        </div>
+
+                        <div class="formula-card">
+                            <div class="formula-title">Tính Quãng Đường</div>
+                            <div class="formula">s = v × t</div>
+                            <div class="formula-desc">Quãng đường = Vận tốc × Thời gian</div>
+                            <div class="formula-example">
+                                Ví dụ: Xe chạy 60 km/h trong 3 giờ<br>
+                                s = 60 × 3 = 180 km
+                            </div>
+                        </div>
+
+                        <div class="formula-card">
+                            <div class="formula-title">Tính Thời Gian</div>
+                            <div class="formula">t = s / v</div>
+                            <div class="formula-desc">Thời gian = Quãng đường ÷ Vận tốc</div>
+                            <div class="formula-example">
+                                Ví dụ: Đi 150 km với vận tốc 50 km/h<br>
+                                t = 150 / 50 = 3 giờ
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theory-note">
+                        <h4>💡 Lưu Ý Quan Trọng</h4>
+                        <ul>
+                            <li>Đơn vị phải thống nhất (ví dụ: km và giờ, hoặc m và giây)</li>
+                            <li>Vận tốc càng lớn, đi cùng quãng đường trong thời gian càng ngắn</li>
+                            <li>Nếu biết 2 trong 3 đại lượng, ta có thể tính được đại lượng còn lại</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animation Section -->
+        <section id="animation" class="section">
+            <div class="container">
+                <h2>🎬 Animation Minh Họa</h2>
+                
+                <div class="animation-container">
+                    <div class="road-scene">
+                        <div class="road">
+                            <div class="road-line"></div>
+                            <div class="road-line"></div>
+                            <div class="road-line"></div>
+                            <div class="road-line"></div>
+                        </div>
+                        <div class="car" id="animationCar">🚗</div>
+                        <div class="start-flag">🏁 Xuất phát</div>
+                        <div class="end-flag">🏁 Đích</div>
+                        <div class="distance-markers">
+                            <span class="marker">0 km</span>
+                            <span class="marker">25 km</span>
+                            <span class="marker">50 km</span>
+                            <span class="marker">75 km</span>
+                            <span class="marker">100 km</span>
+                        </div>
+                    </div>
+
+                    <div class="animation-stats">
+                        <div class="stat-box">
+                            <div class="stat-label">⏱️ Thời gian</div>
+                            <div class="stat-value" id="animTime">0.0 giờ</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">📏 Quãng đường</div>
+                            <div class="stat-value" id="animDistance">0 km</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">🚀 Vận tốc</div>
+                            <div class="stat-value" id="animSpeed">0 km/h</div>
+                        </div>
+                    </div>
+
+                    <div class="animation-controls">
+                        <div class="control-group">
+                            <label for="speedSlider">🎚️ Điều chỉnh vận tốc: <span id="speedValue">50</span> km/h</label>
+                            <input type="range" id="speedSlider" min="10" max="120" value="50" step="10">
+                        </div>
+                        <div class="control-buttons">
+                            <button id="startBtn" class="btn btn-primary">▶️ Bắt đầu</button>
+                            <button id="pauseBtn" class="btn btn-secondary" disabled>⏸️ Tạm dừng</button>
+                            <button id="resetBtn" class="btn btn-danger">🔄 Làm lại</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section id="calculator" class="section">
+            <div class="container">
+                <h2>🧮 Công Cụ Tính Toán</h2>
+                
+                <div class="calculator-container">
+                    <div class="calculator-info">
+                        <p>Nhập 2 trong 3 giá trị để tính giá trị còn lại:</p>
+                    </div>
+
+                    <div class="calculator-grid">
+                        <div class="calc-input-group">
+                            <label for="calcSpeed">🚀 Vận tốc (v)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="calcSpeed" placeholder="Nhập vận tốc">
+                                <span class="unit">km/h</span>
+                            </div>
+                        </div>
+
+                        <div class="calc-input-group">
+                            <label for="calcDistance">📏 Quãng đường (s)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="calcDistance" placeholder="Nhập quãng đường">
+                                <span class="unit">km</span>
+                            </div>
+                        </div>
+
+                        <div class="calc-input-group">
+                            <label for="calcTime">⏱️ Thời gian (t)</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="calcTime" placeholder="Nhập thời gian">
+                                <span class="unit">giờ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="calculateBtn" class="btn btn-large">✨ Tính toán</button>
+
+                    <div id="calcResult" class="calc-result"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises Section -->
+        <section id="exercises" class="section">
+            <div class="container">
+                <h2>✏️ Bài Tập Thực Hành</h2>
+                
+                <div class="exercise-filters">
+                    <button class="filter-btn active" data-level="all">Tất cả</button>
+                    <button class="filter-btn" data-level="easy">😊 Dễ</button>
+                    <button class="filter-btn" data-level="medium">🤔 Trung bình</button>
+                    <button class="filter-btn" data-level="hard">🔥 Khó</button>
+                </div>
+
+                <div id="exerciseList" class="exercise-list"></div>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="section">
+            <div class="container">
+                <h2>🎮 Mini Game: Đua Xe Thông Minh</h2>
+                
+                <div class="game-container">
+                    <div class="game-info">
+                        <h3>🎯 Nhiệm vụ</h3>
+                        <p id="gameTask">Điều chỉnh vận tốc để xe đến đích đúng thời gian yêu cầu!</p>
+                        <div class="game-stats-row">
+                            <div class="game-stat">
+                                <span class="stat-label">📏 Quãng đường:</span>
+                                <span id="gameTargetDistance">100 km</span>
+                            </div>
+                            <div class="game-stat">
+                                <span class="stat-label">⏰ Thời gian yêu cầu:</span>
+                                <span id="gameTargetTime">2.0 giờ</span>
+                            </div>
+                            <div class="game-stat">
+                                <span class="stat-label">⭐ Điểm:</span>
+                                <span id="gameScore">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-scene">
+                        <div class="game-road">
+                            <div class="game-road-line"></div>
+                            <div class="game-road-line"></div>
+                            <div class="game-road-line"></div>
+                        </div>
+                        <div class="game-car" id="gameCar">🚗</div>
+                        <div class="game-start-flag">🏁</div>
+                        <div class="game-end-flag">🏆</div>
+                    </div>
+
+                    <div class="game-controls">
+                        <div class="control-group">
+                            <label for="gameSpeedSlider">🎚️ Chọn vận tốc: <span id="gameSpeedValue">50</span> km/h</label>
+                            <input type="range" id="gameSpeedSlider" min="10" max="150" value="50" step="5">
+                        </div>
+                        <button id="gameStartBtn" class="btn btn-primary btn-large">🚀 Xuất phát!</button>
+                    </div>
+
+                    <div id="gameResult" class="game-result"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Học Vận Tốc - Website giáo dục tương tác</p>
+            <p>Giúp học sinh hiểu rõ mối quan hệ giữa vận tốc, quãng đường và thời gian</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
